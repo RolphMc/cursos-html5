@@ -1,0 +1,112 @@
+<html lang = "pt-br">
+<meta charset = "UTF-8"/>
+			<!-- Usar:
+			
+			PARA HTML - https://www.w3schools.com/html/default.asp <-- Referencias
+			tags:				Descrição					site
+			Parágrafos			Tags para Parágrafos		https://www.w3schools.com/html/html_paragraphs.asp
+			Formatação			Tags de formatação			https://www.w3schools.com/html/html_formatting.asp
+			&nbsp; 				Espaços em linha (não precisa pular linha após ";")
+			<wbr/> 				hifenização (Quebra de grandes palavras)
+			&shy; 				quebra de linha com hífem (não precisa pular linha após ";")
+			<b>					letras em negrito
+			<i> ou <em>			Usa-se i para simples itálico e <em> para dar enfase ao texto e dizer aos navegadores que aquela palavra é 	importante, além disso ver https://www.w3schools.com/ , e saber mais sobre semântica em http://maujor.com/tutorial/escrevendo-html-semantico.php
+			<span> 				Tag para formatar pequenos trexos de texto. Acompanhado de seu estilo("style") ou comandos diretos na CSS para diversos tipos de formatação de texto.
+			<style>				Usado para chamar comandos CSS
+			&lt					representa o simbolo "< menor que" nos navegadores já que esse símbolo representa o inicio de tags no HTML
+			&gt					representa o simbolo "> maior que" assim como no item anterior
+			<code>				serve para formatação de espaços textuais com representações de codígos
+			<pre>				Faz com que as formatações sejam exibidas extamente da maneira que foram digitadas no código HTML do site
+			<body style...>		definir estilos específicos para o corpo (porém há a possibilidade de gerar tais mudanças de forma global através da CSS "style" contida na "header"
+			<img src.../>		inserir imagens dentro do site, acompanha "src" e outros parâmetros
+			<Figure>			fecha sobre "img" e tem significado semântico pode ser acompanhado de uma classe
+			<figcaption>		encontra-se dentro de "figure" e serve para legendas
+			<link .../>			link trabalha identico ao "call" do VBA porém com parâmetros embutidos na tag (não serve para chamar "hiperlinks" dentro da interface do navegador, para isso usar "àncoragem" - https://www.w3schools.com/tags/tag_link.asp
+				[ATENÇÃO]
+			<nav>				Cria menus de navegação no site, acompanha atributos - https://www.w3schools.com/tags/tag_nav.asp
+			<Ol>					ordenar listas. Usa-se "type" para ondernar de maneiras personalizadas - https://www.w3schools.com/tags/tag_ol.asp
+			<Ul>				cria menos ordenados em escala numérica, alfanumérica, romana, etc... - https://www.w3schools.com/tags/tag_ul.asp
+			<Li>				cria os mesmos menos porém sem escala, apenas simbolos -https://www.w3schools.com/tags/tag_li.asp
+			<a>					âncora, acompanhado de atributos leva o usuário para outro link ou página - https://www.w3schools.com/tags/tag_a.asp
+			<tr>				linhas de uma tabela
+			<td>				celulas de uma tabela
+            <iframe>            carrega uma página em outra página (quadro embutido) - https://www.w3schools.com/tags/tag_iframe.asp
+            <map>               cria um mapa de imagem com áreas clicaveis - https://www.w3schools.com/tags/tag_map.asp
+            <form>              espaço de formulário - contém atributos importantes! - https://www.w3schools.com/tags/tag_form.asp
+            <fieldset>          conjunto de campos
+            <input/>             inserção de dados - https://www.w3schools.com/tags/tag_input.asp
+            <label>             aplica alguma função pratica ao texto de cada input, além de ser semantico
+            <select>            criar caixas de seleção
+            <option>            criar as opções contidas na caixa de seleção
+            <optgroup>          separar itens dentro da caixa de seleção em grupos
+   
+   
+   
+   
+			
+			ATRIBUTOS
+			margin				não usa virgulas para separar valores. Caso todos os valores sejam identicos, basta informar apenas uma unica vez qual a medida desejada para padding.
+			box-shadow			valores [d. horizontal px][d. vertical px][desfoque px][cor]
+			border-bottom		valores [espessura][cor][tipo]
+			background			valores [url][comportamento][d. horizontal][d. vertical]
+			colspan				aplicados sobre tabelas para células que ocupará mais que uma coluna usado apenas em "td"
+			rowspan				aplicados sobre tabelas para células que ocupará mais que uma linha usado apenas em "td"
+            method              [get] ou [post] dois tipos de envio de informações de formulários
+   
+   
+   
+			
+			PARA CSS3 - https://www.w3schools.com/cssref/default.asp <-- Referencias
+			Tags:				Descrição					Site
+			text-align			Alinhamento dos textos 		https://www.w3schools.com/cssref/pr_text_text-align.asp
+			text-indent			Usar Identação				https://www.w3schools.com/cssref/pr_text_text-indent.asp
+			background-color	Fundo completo do site		https://www.w3schools.com/css/css_background.asp
+			rgb					representar cores através dos valores absolutos (###,###,###)
+			rgba				mesma função do rgb, porém com o canal alpha para transparências (usar 0<a<1)
+			background-image	Usar imagem de fundo do site
+			url					Usado para mostrar arquivos em determinados diretórios
+			hover []			hover acompanhado da tag cria efeitos relacionados a quando passar o mouse pelos locais prédeterminados.
+			@font-face			Informar ao navegador uma fonte específica para uso em qualquer elemento inserido no site. [font-family][src]
+			font-family			nomar ou chamar determinada fonte
+			display				Mostrar ou não item como um bloco
+            webkits             diversos efeitos - ainda em desenvolvimento
+   
+   
+   
+   
+   
+			
+			PARA JAVASCRIPT - https://www.w3schools.com/jsref/default.asp - usa-se "( ) para parâmetros e {} para cód" para tags.
+			alert				Método - exibe uma caixa de alerta - https://www.w3schools.com/jsref/met_win_alert.asp
+            document            Método - escreve diretamente no navegador - https://www.w3schools.com/jsref/met_doc_write.asp
+            onmousemove         Eventos DOM > Eventos de Objeto > Mouse Events - https://www.w3schools.com/jsref/obj_mouseevent.asp
+			onclick             mesmo que anterior
+            !                   em condicionais "!" serve como "not"
+   
+			FERRAMENTA PARA DESENVOLVIMENTO
+			prefixadores		dois tipos salvos no favoritos do navegador e tem a função de compatibilizar seu codigo para o maior número de navegadores e dispositivos. O Prefixr tambem efetua compressão do código, ou seja, diminui os códigos caso seja necessário.
+			Google Fonts		disponibilia fontes para incorporação direta no site
+			
+			
+			DICIONÁRIO DE SIGRAS
+			sig		inglês					português
+			br		single line break 		quebra de linha única
+			nbsp	non-breaking space		espaço na mesma linha
+			wbr		Word Break Opportunity	oportunidade de quebra de palavras
+			shy								pular linha e inserir hífem no local
+			b		Bold					Negrito
+			
+			SIMBOLOS ESPECIAIS
+				http://www.codex.wiki.br/Html/S%C3%ADmbolos
+			
+			Erros Comuns:			
+			deixar de colocar ";" no final das instruções internas de tags
+            digitar "\" ao usar "src", isso além de não possibilitar o encontro do arquivo, em diretórios concatenados, os comandos não funcionam corretamente.
+			
+			QUESTÕES
+			Verificar o porque os textos do menu não estão subrinhando quando passa-se o mouse por eles, mesmo após inserção do text align na ancora com "a:hover"
+            Videos e musica normalmente devem ser convertidos em 3 tipos diferentes de extensões. se atentar a isso! Ver aula 31
+			
+			-->
+			
+</html>

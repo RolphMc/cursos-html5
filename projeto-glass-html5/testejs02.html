@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Teste JavaScript 02 </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            var quebrada = false;
+            function mudaLampada(tipo){
+                
+                if (!quebrada) {
+                document.getElementById("luz").src = "_imagens/" + tipo + ".jpg";
+                        if (tipo=='lampada-quebrada'){
+                            quebrada = true;
+                        }
+                }           
+            }      
+        </script>
+    </head>
+    <body>
+        <h1> Acenda a lâmpada </h1>
+        <img src="_imagens/lampada-apagada.jpg" id="luz" onmouseover="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')" />
+    </body>
+</html>
+
+<!-- ANOTAÇÕES - Funções - Tudo sobre funções: https://www.w3schools.com/js/js_function_definition.asp
+
+        <script>
+            var quebrada = false           [quebrada é uma váriavel borlean][B][b][1][2]
+            function mudaLampada(tipo){     ["mudarLampada" se torna a função que recebe uma váriável "tipo"][A][a][1]
+                
+                if (!quebrada) {
+                document.getElementById("luz").src = "_imagens/" + tipo + ".jpg"; [valor de retorno para o navegador][D]
+                        if (tipo=='lampada-quebrada'){      ["==" <> "="][C][d]
+                            quebrada = true;
+                        }
+                }           
+            }      
+        </script>
+=====
+        <img src="_imagens/lampada-apagada.jpg" id="luz" onmouseover="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')" />
+
+[A] Tanto "mudarLampada" quanto "tipo" podem receber nomes diferentes de acordo com a necessidade
+[a] Funções podem ser armazenadas em variaveis "var" - variaveis podem ser usadas como funções.
+[1] funções armazenadas em váriaveis não precisam de nomes, pois usam o nome da "var" como identificador.
+[B] Todas as váriáveis devem conter identificadores - https://www.w3schools.com/js/js_variables.asp
+[b] Os números são tratados como textos caso sejam atribuídos com áspas simples ''.
+[1] Pode se decrarar diversas váriáveis em uma única "var" separando-as com ",".
+[2] váriáveis são automaticamente identificadas pelo sistema quanto a sua classficação "string, long, borlean, etc"
+[C] O sinal "=" significa aribuição e "==" significa igual no sentido literal - mais detalhes, vide site [B].
+[D] se o valor de "quebrada" "não (!)" for falso, logo o valor será retornado para o navegador seguindo as instruções getElementById.
+[d] se o parâmetro "tipo" contiver a string "lampada-quebrada" a var "quebrada" recebe o valor "true" e assim pula a execução da function "mudarLampada" por "não (!)" ser falsa.
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
