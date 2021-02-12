@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste CSS</title>
+    <style>
+        p.bio {
+            font-size: 36px !important;
+        }
+        #sidebar p {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <p class="bio">especificidade CSS</p>
+        <p>Estilo inline:                      a = 1 — (1, 0, 0, 0) - Estilo diretamente aplicado no html se sobrepõe sempre</p>
+        <p>Id:                                 b = 1 — (0, 1, 0, 0)</p>
+        <p>Classe, pseudo classe, atributo:    c = 1 — (0, 0, 1, 0)</p>
+        <p>Elemento, pseudo elemento:          d = 1 — (0, 0, 0, 1)</p>
+    </div>
+</body>
+</html>
